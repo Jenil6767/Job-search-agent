@@ -1,0 +1,27 @@
+{
+  "name": "ai-jobpilot-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered Job Search & Workflow Automation Platform",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "dev:api": "pnpm --filter @ai-jobpilot/api dev",
+    "dev:worker": "pnpm --filter @ai-jobpilot/worker dev",
+    "dev:web": "pnpm --filter @ai-jobpilot/web dev",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rimraf node_modules"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.0",
+    "rimraf": "^6.0.1",
+    "turbo": "^2.4.4",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@10.6.1",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

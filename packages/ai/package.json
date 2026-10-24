@@ -1,0 +1,21 @@
+{
+  "name": "@ai-jobpilot/ai",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@ai-jobpilot/config": "workspace:*",
+    "@ai-jobpilot/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  }
+}
